@@ -1,11 +1,13 @@
 {
-  "name": "ts-template",
-  "version": "1.2.1",
+  "name": "authless-core",
+  "version": "2.0.0",
   "description": "",
   "private": true,
   "main": "dist/index",
   "types": "dist/index",
-  "dependencies": {},
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -14,7 +16,7 @@
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@types/jest": "^25.2.1",
-    "@types/node": "^13.13.4",
+    "@types/node": "^13.13.12",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",

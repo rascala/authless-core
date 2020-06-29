@@ -1,11 +1,21 @@
-export class Test {
-  name: string
+import {
+  IBot,
+  IService,
+  IAuthlessCore,
+} from './types'
 
-  constructor (name) {
+export class Authless implements IAuthlessCore {
+  name: string
+  bots: IBot[]
+  services: IService[]
+
+  constructor (name, bots, services) {
     this.name = name
+    this.bots = bots
+    this.services = services
   }
 
-  hello (): string {
-    return `Hello ${this.name}`
+  run (): void {
+    // run what?
   }
 }
