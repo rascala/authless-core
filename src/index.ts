@@ -1,7 +1,7 @@
 import {
+  IAuthlessCore,
   IBot,
   IService,
-  IAuthlessCore,
 } from './types'
 
 export class Authless implements IAuthlessCore {
@@ -15,6 +15,7 @@ export class Authless implements IAuthlessCore {
     this.services = services
   }
 
+  // eslint-disable-next-line class-methods-use-this
   run (): void {
     // run what?
   }
