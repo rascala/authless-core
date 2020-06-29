@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import * as path from 'path'
 import { IBot, IResponse, IService, IServiceRouter } from '../types'
+import puppeteer from 'puppeteer-extra'
 
 interface UrlParams {
   url: string
@@ -49,7 +50,6 @@ export class AuthlessServer {
 
   // TODO - how do we handle anonymous users(bot is undefined)
   async launchBrowser (service: IService, bot: IBot): Promise<any> {
-    const puppeteer: any = {}
     this.puppeteerPlugins.forEach(plugin => {
       puppeteer.use(plugin)
     })

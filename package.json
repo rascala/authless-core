@@ -6,7 +6,7 @@
   "main": "dist/index",
   "types": "dist/index",
   "dependencies": {
-    "puppeteer": "^2.1.1"
+    "puppeteer-extra": "^3.1.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -19,6 +19,7 @@
     "@types/node": "^13.13.12",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
+    "@types/puppeteer": "^3.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard-with-typescript": "^16.0.0",
     "eslint-plugin-import": "^2.20.2",
